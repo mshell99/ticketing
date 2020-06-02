@@ -1,0 +1,4056 @@
+
+> client@1.0.0 dev /app
+> next
+
+ready - started server on http://localhost:3000
+> Using "webpackDevMiddleware" config function defined in next.config.js.
+event - compiled successfully
+wait  - compiling...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+event - compiled successfully
+event - build page: /
+wait  - compiling...
+event - compiled successfully
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '0d506542739416a66b4694ad4667e722',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'cache-control': 'max-age=0',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 0d506542739416a66b4694ad4667e722\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'cache-control: max-age=0\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+event - build page: /next/dist/pages/_error
+wait  - compiling...
+event - compiled successfully
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '9de6c780df2422dfd50ea6ab017f8272',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 9de6c780df2422dfd50ea6ab017f8272\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: '*/*',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'bcf951a35a3d6181a155f2973b3f6ff4',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      referer: 'http://www.mshell-dev.com/tickets',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: */*\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: bcf951a35a3d6181a155f2973b3f6ff4\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'referer: http://www.mshell-dev.com/tickets\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: '*/*',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'd5a30373e07dad7eebabfdc877918d7e',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      referer: 'http://www.mshell-dev.com/tickets',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: */*\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: d5a30373e07dad7eebabfdc877918d7e\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'referer: http://www.mshell-dev.com/tickets\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+event - build page: /next/dist/pages/_error
+wait  - compiling...
+event - compiled successfully
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '6b10a268d22360e3a71106356a1a8364',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'cache-control': 'max-age=0',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      referer: 'http://www.mshell-dev.com/tickets',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 6b10a268d22360e3a71106356a1a8364\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'cache-control: max-age=0\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'referer: http://www.mshell-dev.com/tickets\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'f7e62080441d3881e8f60ddc64f3a66f',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: f7e62080441d3881e8f60ddc64f3a66f\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: '*/*',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '02d933def51059fd52f9a4214b0f08f7',
+      'x-real-ip': '18.217.223.118',
+      'x-forwarded-for': '18.217.223.118',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'accept-language': 'en, *;q=0.7',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: */*\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 02d933def51059fd52f9a4214b0f08f7\r\n' +
+        'x-real-ip: 18.217.223.118\r\n' +
+        'x-forwarded-for: 18.217.223.118\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'accept-language: en, *;q=0.7\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '0fbeb471e9244497178401c32b65a632',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'cache-control': 'max-age=0',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 0fbeb471e9244497178401c32b65a632\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'cache-control: max-age=0\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: '*/*',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '7a24012d6d3279eb951e9a73ac1ef16f',
+      'x-real-ip': '3.101.0.4',
+      'x-forwarded-for': '3.101.0.4',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'accept-language': 'en, *;q=0.7',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: */*\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 7a24012d6d3279eb951e9a73ac1ef16f\r\n' +
+        'x-real-ip: 3.101.0.4\r\n' +
+        'x-forwarded-for: 3.101.0.4\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'accept-language: en, *;q=0.7\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: '*/*',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '2a5527ee2eeeab80239421e72a038e50',
+      'x-real-ip': '138.197.152.122',
+      'x-forwarded-for': '138.197.152.122',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '443',
+      'x-forwarded-proto': 'https',
+      'x-scheme': 'https',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2225.0 Safari/537.36',
+      'accept-encoding': 'gzip, deflate'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: */*\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 2a5527ee2eeeab80239421e72a038e50\r\n' +
+        'x-real-ip: 138.197.152.122\r\n' +
+        'x-forwarded-for: 138.197.152.122\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 443\r\n' +
+        'x-forwarded-proto: https\r\n' +
+        'x-scheme: https\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2225.0 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: '*/*',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'f74e0e7f3af99151aefe0b2a95a1b965',
+      'x-real-ip': '138.197.144.119',
+      'x-forwarded-for': '138.197.144.119',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36',
+      'accept-encoding': 'gzip, deflate'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: */*\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: f74e0e7f3af99151aefe0b2a95a1b965\r\n' +
+        'x-real-ip: 138.197.144.119\r\n' +
+        'x-forwarded-for: 138.197.144.119\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'e61c38e70a0a452108d8b7459c0383be',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: e61c38e70a0a452108d8b7459c0383be\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: '*/*',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'e4a82402335609ba905aa1df8046c882',
+      'x-real-ip': '18.217.223.118',
+      'x-forwarded-for': '18.217.223.118',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'accept-language': 'en, *;q=0.7',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: */*\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: e4a82402335609ba905aa1df8046c882\r\n' +
+        'x-real-ip: 18.217.223.118\r\n' +
+        'x-forwarded-for: 18.217.223.118\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'accept-language: en, *;q=0.7\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: '*/*',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'ad9463c4e9d6252d929800fe1d26d19a',
+      'x-real-ip': '135.14.238.250',
+      'x-forwarded-for': '135.14.238.250',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'accept-language': 'en, *;q=0.7',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: */*\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: ad9463c4e9d6252d929800fe1d26d19a\r\n' +
+        'x-real-ip: 135.14.238.250\r\n' +
+        'x-forwarded-for: 135.14.238.250\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'accept-language: en, *;q=0.7\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+event - build page: /next/dist/pages/_error
+wait  - compiling...
+event - compiled successfully
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'a67bb3e446f8440b548c0d4474031209',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      referer: 'http://www.mshell-dev.com/',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: image/webp,image/apng,image/*,*/*;q=0.8\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: a67bb3e446f8440b548c0d4474031209\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'referer: http://www.mshell-dev.com/\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'ab58899e55a52ff91008641d9511b093',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'cache-control': 'max-age=0',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      referer: 'http://www.mshell-dev.com/',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: ab58899e55a52ff91008641d9511b093\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'cache-control: max-age=0\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'referer: http://www.mshell-dev.com/\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '63071df0a2fa67cb5a63c78130224378',
+      'x-real-ip': '65.155.30.101',
+      'x-forwarded-for': '65.155.30.101',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.71 Safari/537.36',
+      'accept-language': 'en-US,en;q=0.9',
+      referer: 'http://www.bing.com/search?q=amazon',
+      'accept-encoding': 'gzip, deflate'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 63071df0a2fa67cb5a63c78130224378\r\n' +
+        'x-real-ip: 65.155.30.101\r\n' +
+        'x-forwarded-for: 65.155.30.101\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'pragma: no-cache\r\n' +
+        'cache-control: no-cache\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.71 Safari/537.36\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'referer: http://www.bing.com/search?q=amazon\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '4efb846e6094aa576233b63297aedc94',
+      'x-real-ip': '65.154.226.220',
+      'x-forwarded-for': '65.154.226.220',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+      'sec-fetch-site': 'same-origin',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-user': '?1',
+      'sec-fetch-dest': 'document',
+      'accept-encoding': 'gzip, deflate, br',
+      'accept-language': 'en-US'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 4efb846e6094aa576233b63297aedc94\r\n' +
+        'x-real-ip: 65.154.226.220\r\n' +
+        'x-forwarded-for: 65.154.226.220\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36\r\n' +
+        'sec-fetch-site: same-origin\r\n' +
+        'sec-fetch-mode: navigate\r\n' +
+        'sec-fetch-user: ?1\r\n' +
+        'sec-fetch-dest: document\r\n' +
+        'accept-encoding: gzip, deflate, br\r\n' +
+        'accept-language: en-US\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'ca4bfd5decae35ef9955842b8f9dcf2b',
+      'x-real-ip': '65.154.226.220',
+      'x-forwarded-for': '65.154.226.220',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.70 Safari/537.36',
+      'accept-encoding': 'gzip, deflate'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: ca4bfd5decae35ef9955842b8f9dcf2b\r\n' +
+        'x-real-ip: 65.154.226.220\r\n' +
+        'x-forwarded-for: 65.154.226.220\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.70 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '1d56b4a3379ba08bde076077c7ef13a0',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      purpose: 'prefetch',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 1d56b4a3379ba08bde076077c7ef13a0\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'purpose: prefetch\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+event - build page: /next/dist/pages/_error
+wait  - compiling...
+event - compiled successfully
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'da2be4fb948d636805b62b68f564cb16',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      referer: 'http://www.mshell-dev.com/api/users/currentuser',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: image/webp,image/apng,image/*,*/*;q=0.8\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: da2be4fb948d636805b62b68f564cb16\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'referer: http://www.mshell-dev.com/api/users/currentuser\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'b4cbece7fee9ff4eb17744c62431cc2e',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: b4cbece7fee9ff4eb17744c62431cc2e\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: '*/*',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '4051700c5e7123e5e0122532959d3f9c',
+      'x-real-ip': '54.207.33.42',
+      'x-forwarded-for': '54.207.33.42',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'accept-language': 'en, *;q=0.7',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: */*\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 4051700c5e7123e5e0122532959d3f9c\r\n' +
+        'x-real-ip: 54.207.33.42\r\n' +
+        'x-forwarded-for: 54.207.33.42\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'accept-language: en, *;q=0.7\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': '95a05d68b69d8a8dffc907b162ae2de3',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'cache-control': 'max-age=0',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: 95a05d68b69d8a8dffc907b162ae2de3\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'cache-control: max-age=0\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
+Error: socket hang up
+    at connResetException (internal/errors.js:614:14)
+    at Socket.socketOnEnd (_http_client.js:491:23)
+    at Socket.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1224:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'ECONNRESET',
+  config: {
+    url: '/api/users/currentuser',
+    method: 'get',
+    headers: {
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      host: 'www.mshell-dev.com',
+      'x-request-id': 'fd1d0bcbb22b590eb0f47096d51b164d',
+      'x-real-ip': '76.119.104.61',
+      'x-forwarded-for': '76.119.104.61',
+      'x-forwarded-host': 'www.mshell-dev.com',
+      'x-forwarded-port': '80',
+      'x-forwarded-proto': 'http',
+      'x-scheme': 'http',
+      'cache-control': 'max-age=0',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
+      'accept-encoding': 'gzip, deflate',
+      'accept-language': 'en-US,en;q=0.9'
+    },
+    baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: false,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    _options: {
+      protocol: 'http:',
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      path: '/api/users/currentuser',
+      method: 'GET',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: 'ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      port: null,
+      nativeProtocols: [Object],
+      pathname: '/api/users/currentuser'
+    },
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'GET /api/users/currentuser HTTP/1.1\r\n' +
+        'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n' +
+        'host: www.mshell-dev.com\r\n' +
+        'x-request-id: fd1d0bcbb22b590eb0f47096d51b164d\r\n' +
+        'x-real-ip: 76.119.104.61\r\n' +
+        'x-forwarded-for: 76.119.104.61\r\n' +
+        'x-forwarded-host: www.mshell-dev.com\r\n' +
+        'x-forwarded-port: 80\r\n' +
+        'x-forwarded-proto: http\r\n' +
+        'x-scheme: http\r\n' +
+        'cache-control: max-age=0\r\n' +
+        'upgrade-insecure-requests: 1\r\n' +
+        'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\r\n' +
+        'accept-encoding: gzip, deflate\r\n' +
+        'accept-language: en-US,en;q=0.9\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/users/currentuser',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/api/users/currentuser',
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function (anonymous)]
+}
